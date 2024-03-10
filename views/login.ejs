@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+
+  <div class="nav">
+    
+      <div class="logo">
+        <p> T<img src="images/plane.png" alt="#" />U R</p>
+                 
+
+      </div>
+    <ul>
+      
+      <button>LOGIN</button>
+      <button>REGISTER</button>
+    </ul>
+      
+    </div>
+    
+    
+  
+  
+
+  <div class="form">
+  <form id="login" class="asd" action="/login" method="post">
+    <h2>Login</h2>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    <p class="switch">Don't have an account? Sign Up</p>
+  </form>
+
+  
+  <form id="signup" class="asd" action="/sign" method="post">
+    <h2>Sign Up</h2>
+    <input type="text"  name="sign_name" placeholder="Name"required>
+    <input type="email" name="sign_email" placeholder="Email" required>
+    <input type="password" name="sign_password" placeholder="Password"  required>
+    <button type="submit">Submit</button>
+    <p class="switch">Already have an account? Login</p>
+  </form>
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    
+    $('#login').addClass('visible');
+
+    
+    $('.switch').click(function() {
+      $('.asd').toggleClass('visible');
+    });
+
+   // document.getElementById('registerlink').addEventListener('click', function() {
+        // Show the registration page
+        // document.getElementById('signup').style.display = 'block';
+        // document.getElementById('login').style.display = 'none';
+// });
+
+// $('.register').click(function() {
+//         $('#login').removeClass('visible');
+//         $('.asd').addClass('visible');
+//     });
+
+
+});
+</script>
+
+</html>
